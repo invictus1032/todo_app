@@ -1,12 +1,11 @@
 <template>
-    <div>
-    </div>
+    <h1>Create Your Todo</h1>
 </template>
 
 <script setup>
 
 </script>
 
-<style lang="scss"scoped>
+<style scoped>
 
 </style>
