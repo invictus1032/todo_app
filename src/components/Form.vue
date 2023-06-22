@@ -31,8 +31,8 @@ function markTaskAsDone(index) {
     tasks[index].done = !tasks[index].done
 }
 
-function removeTask(id) {
-    tasks.splice(id, 1);
+function removeTask(index) {
+    tasks.splice(index, 1);
 }
 </script>
 
