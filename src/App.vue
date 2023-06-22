@@ -1,11 +1,11 @@
 <template>
     <Header/>
-    <Button/>
+    <Form/>
 </template>
 
 <script setup>
 import Header from "./components/Header.vue"
-import Button from "./components/Button.vue"
+import Form from "./components/Form.vue"
 </script>
 
 <style>
