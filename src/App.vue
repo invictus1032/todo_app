@@ -8,7 +8,7 @@ import { ref } from "vue"
 import Header from "./components/Header.vue"
 import Form from "./components/Form.vue"
 
-const tasks = ref([])
+const tasks = ref([{name: "This is a sample todo", done: false}])
 </script>
 
 <style>
