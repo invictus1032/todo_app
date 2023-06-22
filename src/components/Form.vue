@@ -5,8 +5,9 @@
             <input type="text" id="input_task" v-model="currentTask" required>
             <button>Add</button>
             <ul>
-                <li v-for="task in tasks">
+                <li v-for="(task, index) in tasks">
                     {{ task }}
+                    <button @click="removeTask(index)">X</button>
                 </li>
             </ul>
         </form>
@@ -23,6 +24,10 @@ function addTask() {
     if (currentTask.value === "") { return }
     tasks.push(currentTask.value);
     currentTask.value = "";
+}
+
+function removeTask(id) {
+    tasks.splice(id, 1);
 }
 </script>
 
