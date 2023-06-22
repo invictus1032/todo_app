@@ -15,13 +15,13 @@
 
 <script setup>
 import { ref } from 'vue';
+const { tasks } = defineProps({tasks: Array})
 
 const currentTask = ref("")
-const tasks = ref([])
 
 function addTask() {
     if (currentTask.value === "") { return }
-    tasks.value.push(currentTask.value);
+    tasks.push(currentTask.value);
     currentTask.value = "";
 }
 </script>
